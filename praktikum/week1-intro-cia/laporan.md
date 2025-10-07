@@ -1,74 +1,54 @@
-# Laporan Minggu 1 - Intro CIA
+# Praktikum Kriptografi — Minggu 1
+## Sejarah Kriptografi & Prinsip CIA
 
-# Laporan: CIA Triad dan Peran Kriptografi dalam Kehidupan Sehari-hari
-
-## 1. Konsep Dasar Confidentiality, Integrity, Availability (CIA)
-
-Dalam keamanan informasi, terdapat tiga prinsip utama yang disebut **CIA Triad**: Confidentiality, Integrity, dan Availability. Prinsip ini menjadi dasar dalam menjaga data dan sistem informasi agar tetap aman.
-
-### a. Confidentiality (Kerahasiaan)
-- **Definisi**: Menjamin bahwa informasi hanya dapat diakses oleh pihak yang berhak.
-- **Tujuan**: Melindungi data sensitif dari akses tidak sah.
-- **Contoh**:  
-  - Penggunaan password atau autentikasi biometrik.  
-  - Enkripsi pesan di WhatsApp (end-to-end encryption).  
-
-### b. Integrity (Integritas)
-- **Definisi**: Menjaga keaslian dan konsistensi data agar tidak diubah tanpa izin.
-- **Tujuan**: Memastikan data tetap valid dan tidak dimanipulasi.
-- **Contoh**:  
-  - Tanda tangan digital pada dokumen elektronik.  
-  - Hashing (misalnya SHA-256) untuk memverifikasi keutuhan file.  
-
-### c. Availability (Ketersediaan)
-- **Definisi**: Menjamin data atau layanan selalu tersedia untuk pihak yang berhak.
-- **Tujuan**: Memastikan pengguna dapat mengakses informasi kapanpun dibutuhkan.
-- **Contoh**:  
-  - Server dengan backup dan load balancing.  
-  - Sistem perlindungan terhadap serangan DDoS.  
-
-Singkatnya:  
-- **Confidentiality** → menjaga informasi tetap rahasia.  
-- **Integrity** → memastikan data tetap utuh/asli.  
-- **Availability** → menjamin aksesibilitas data/layanan.  
-
-
-## 2. Peran Kriptografi dalam Kehidupan Sehari-hari
-
-**Kriptografi** adalah ilmu yang digunakan untuk mengamankan informasi melalui proses enkripsi, dekripsi, hashing, dan tanda tangan digital. Perannya sangat penting dalam menjaga kerahasiaan, keaslian, serta keamanan data.
-
-### a. Password Hashing (Login Sistem)
-- Password yang disimpan di database tidak dalam bentuk asli, melainkan diubah menjadi **hash**.  
-- Dengan demikian, meskipun database bocor, password asli sulit diketahui.  
-- Contoh: login akun email, e-commerce, atau media sosial.  
-
-### b. Chip pada Kartu ATM & Kartu Kredit (EMV)
-- Kartu ATM/kredit modern menggunakan **chip EMV** dengan kriptografi untuk menghasilkan kode unik tiap transaksi.  
-- Mencegah cloning kartu dan menjaga integritas transaksi.  
-
-### c. Face ID / Fingerprint pada Smartphone
-- Sistem biometrik menyimpan data dalam bentuk terenkripsi, bukan gambar asli.  
-- Menggunakan kriptografi kunci publik agar hanya perangkat sah yang bisa mengaksesnya.  
-- Contoh: membuka HP, otorisasi pembayaran di aplikasi banking.  
-
-### d. E-Commerce & Payment Gateway
-- Transaksi online diamankan dengan kriptografi.  
-- Menjamin kerahasiaan data transaksi, autentikasi identitas, serta mencegah manipulasi harga.  
-- Contoh: QRIS, pembayaran di marketplace.  
-
-### e. DRM (Digital Rights Management)	
-- Konten digital (game, film, musik) dienkripsi agar hanya pengguna sah yang bisa mengaksesnya.  
-- Mencegah pembajakan.  
-- Contoh: Netflix, Spotify, Steam.  
-
-### f. Sistem Navigasi GPS
-- GPS modern menggunakan kriptografi agar sinyal asli tidak bisa dipalsukan (*anti-spoofing*).  
-- Penting untuk navigasi pesawat, kapal, hingga kendaraan otonom.  
+Nama  : Jamalud  
+NIM   : 23020275  
+Kelas : 5IKRB  
 
 ---
 
-## 3. Kesimpulan
-- **CIA Triad** (Confidentiality, Integrity, Availability) adalah prinsip dasar keamanan informasi.  
-- **Kriptografi** mendukung penerapan CIA Triad melalui berbagai aplikasi nyata: **password hashing, chip ATM/kredit, biometrik smartphone, e-commerce, DRM, hingga GPS**.  
-- Tanpa kriptografi, layanan digital modern akan sangat rentan terhadap pencurian data, manipulasi informasi, dan serangan siber.  
+## 1. Tujuan
+1. Menjelaskan sejarah dan evolusi kriptografi dari masa klasik hingga modern.  
+2. Menyebutkan prinsip Confidentiality, Integrity, Availability (CIA).  
+3. Menyimpulkan peran kriptografi dalam sistem keamanan informasi modern.  
+4. Menyiapkan repositori GitHub sebagai media kerja praktikum.  
 
+---
+
+## 2. Ringkasan Teori
+
+### Sejarah Kriptografi
+Kriptografi telah digunakan sejak ribuan tahun lalu untuk melindungi pesan rahasia. Pada era **klasik**, metode substitusi sederhana seperti **Caesar Cipher** dan **Vigenère Cipher** digunakan untuk menyembunyikan isi pesan. Meskipun efektif pada masanya, cipher klasik mudah dipecahkan dengan analisis frekuensi.  
+
+Memasuki abad ke-20, muncul **kriptografi modern** yang didukung oleh matematika dan komputer. Algoritma simetris seperti **DES** dan **AES**, serta algoritma kunci publik seperti **RSA**, menjadi standar dalam melindungi komunikasi digital.  
+
+Pada era **kontemporer**, kriptografi berkembang lebih jauh untuk mendukung teknologi baru seperti **blockchain** dan **cryptocurrency** (contohnya Bitcoin), yang mengandalkan fungsi hash, tanda tangan digital, dan protokol konsensus untuk menjamin keamanan transaksi.  
+
+### Prinsip CIA
+- **Confidentiality (Kerahasiaan)**  
+  Data hanya dapat diakses oleh pihak yang berwenang.  
+  *Contoh:* Enkripsi end-to-end pada WhatsApp melindungi pesan dari pihak ketiga.  
+
+- **Integrity (Integritas)**  
+  Data harus tetap utuh dan tidak boleh dimodifikasi secara ilegal.  
+  *Contoh:* Fungsi hash (SHA-256) digunakan untuk memverifikasi keaslian file download.  
+
+- **Availability (Ketersediaan)**  
+  Sistem dan data harus tersedia kapan pun dibutuhkan pengguna.  
+  *Contoh:* Proteksi server dari serangan DDoS untuk menjaga layanan tetap aktif.  
+
+---
+
+## 3. Dokumentasi
+ 
+
+## 4. Jawaban Quiz
+
+  Siapa tokoh yang dianggap sebagai bapak kriptografi modern?
+- Claude Shannon.
+
+  Sebutkan algoritma kunci publik yang populer digunakan saat ini.
+- RSA dan Elliptic Curve Cryptography (ECC).
+
+ Apa perbedaan utama antara kriptografi klasik dan kriptografi modern?
+- Kriptografi klasik berbasis substitusi/pergeseran huruf, sedangkan kriptografi modern berbasis teori matematika kompleks dan kunci besar sehingga jauh lebih aman.
