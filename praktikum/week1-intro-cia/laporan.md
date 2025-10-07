@@ -1,7 +1,7 @@
 # Praktikum Kriptografi — Minggu 1
 ## Sejarah Kriptografi & Prinsip CIA
 
-Nama  : Jamalud  
+Nama  : Jamaludin  
 NIM   : 23020275  
 Kelas : 5IKRB  
 
