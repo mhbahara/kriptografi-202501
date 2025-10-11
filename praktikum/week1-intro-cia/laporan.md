@@ -81,7 +81,29 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kesimpulan Materi: Sejarah Kriptografi & Prinsip CIA
+
+Sejarah kriptografi menunjukkan sebuah perkembangan yang dinamis, dari seni rahasia menjadi ilmu pengetahuan yang kompleks, yang didorong oleh perlombaan senjata antara pembuat dan pemecah kode.
+Dari Simpel ke Kompleks:Kriptografi berevolusi dari teknik substitusi dan transposisi manual (seperti Scytale, Caesar Cipher) menjadi algoritma matematis yang sangat rumit yang dijalankan oleh komputer.
+Dari Kerahasiaan ke Keamanan Menyeluruh:Awalnya fokus hanya pada kerahasiaan (menyembunyikan isi pesan). Seiring waktu, terutama di era digital, kriptografi berkembang untuk menjamin integritas, autentikasi, dan non-repudiasi (contoh: tanda tangan digital).
+Peran Kunci yang Berubah: Dari being part of the algorithm (cipher klasik) menjadi elemen terpisah yang sangat vital. Prinsip Kerckhoffs menegaskan bahwa keamanan sistem harus terletak pada kerahasiaan kunci, bukan kerahasiaan algoritma.Revolusi Digital:** Penemuan kriptografi kunci publik (asimertris) oleh Diffie-Hellman dkk. adalah lompatan besar, yang memecahkan masalah distribusi kunci simetris dan membuka pintu bagi keamanan e-commerce, internet, dan komunikasi modern.Perang vs Perlindungan:Sepanjang sejarah, kriptografi telah menjadi alat strategis dalam peperangan, diplomasi, dan intelijen. Hari ini, kriptografi adalah tameng penting untuk melindungi privasi, data keuangan, dan kedaulatan digital setiap individu dan organisasi.Inti dari sejarah kriptografi adalah: Apa yang dulunya adalah alat bagi kalangan terbatas (militer, diplomat) kini telah menjadi kebutuhan dasar untuk melindungi kemanusiaan di dunia digital.
+
+Kesimpulan Prinsip CIA Triad
+
+Prinsip CIA Triad (Confidentiality, Integrity, Availability) adalah fondasi dan tujuan utama dari segala upaya keamanan informasi, termasuk penerapan kriptografi.
+C (Confidentiality / Kerahasiaan): Memastikan informasi hanya dapat diakses oleh pihak yang berwenang. Kriptografi adalah tulang punggung prinsip ini, melalui teknik enkripsi.
+I (Integrity / Integritas):Memastikan informasi tidak diubah, dirusak, atau dirusak oleh pihak yang tidak berwenang selama transmisi atau penyimpanan. Kriptografi mendukungnya melalui hash function dan tanda tangan digital.
+A (Availability / Ketersediaan): Memastikan informasi dan sistem dapat diakses oleh pihak yang berwenang ketika dibutuhkan. Meskipun lebih terkait dengan keamanan jaringan dan redundansi sistem, serangan yang memanfaatkan kriptografi (seperti Ransomware) justru mengancam Availability dengan mengenkripsi data dan meminta tebusan.
+
+Inti dari CIA Triad adalah: Sebuah sistem informasi yang aman harus secara seimbang menjamin ketiga pilar ini. Mengabaikan satu saja dapat menyebabkan kerugian besar.**
+ Kesimpulan Hubungan Keduanya
+Sejarah Kriptografi dan Prinsip CIA adalah dua sisi dari koin yang sama.
+Kriptografi adalah "Bagaimana"-nya (How), yaitu alat dan teknik yang dikembangkan sepanjang sejarah untuk mewujudkan tujuan keamanan.
+CIA Triad adalah "Mengapa"-nya(Why), yaitu kerangka kerja filosofis yang mendefinisikan apa yang ingin kita capai dengan alat-alat tersebut.
+
+Hubungan Simbiosis:
+Kebutuhan untuk mencapai Confidentiality dan Integrity dalam dunia digital yang rentan telah mendorong evolusi kriptografi menjadi lebih kuat dan serba guna.
+Di sisi lain, penemuan-penemuan dalam kriptografi (seperti kriptografi kunci publik) memungkinkan kita untuk mendefinisikan dan menerapkan prinsip Integrity dan Authentication dengan cara yang sebelumnya tidak mungkin.
 
 ---
 
