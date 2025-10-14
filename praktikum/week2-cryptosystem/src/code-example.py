@@ -19,7 +19,7 @@ def decrypt(ciphertext, key):
     return result
 
 if __name__ == "__main__":
-    message = "<nim><>"
+    message = "<230202770><Nanda Erdi Pratama>"
     key = 5
 
     enc = encrypt(message, key)
