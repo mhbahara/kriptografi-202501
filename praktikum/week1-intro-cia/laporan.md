@@ -65,9 +65,8 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
+![Hasil Eksekusi](screenshots/Eksekusi.png)
+![Hasil Input](screenshots/home.png)
 )
 
 ---
