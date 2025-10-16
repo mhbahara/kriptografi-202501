@@ -94,8 +94,27 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: 
-- Pertanyaan 2: …  
+- Pertanyaan 1: Komponen Utama Kriptosistem:
+Plaintext - Data asli (pesan, file).
+Ciphertext - Data terenkripsi (hasil acakan).
+Kunci - Data rahasia untuk enkripsi & dekripsi.
+Algoritma - Metode untuk mengubah plaintext ↔ ciphertext.
+Intinya: Algoritma mengambil plaintext dan kunci untuk menghasilkan ciphertext. Proses sebaliknya menggunakan kunci yang sama untuk mengembalikan ciphertext menjadi plaintext.
+- Pertanyaan 2: Kelebihan Kriptografi Simetris (vs Asimetris):
+1.  Jauh Lebih Cepat - Efisien untuk enkripsi data dalam jumlah besar.
+2.  **Sumber Daya Rendah - Cocok untuk perangkat terbatas (IoT, mobile).
+3.  Lebih Kuat - Kunci yang lebih pendek memberikan tingkat keamanan setara.
+4.  Implementasi Sederhana - Hanya menggunakan satu kunci.
+
+Kelemahan Kriptografi Simetris (vs Asimetris):
+1.  Masalah Distribusi Kunci - Kesulitan mengirimkan kunci rahasia dengan aman.
+2.  Tidak Ada Non-Repudiation - Tidak bisa membuktikan asal pesan karena kunci dibagi.
+3.  Manajemen Kunci Rumit - Membutuhkan terlalu banyak kunci unik untuk banyak pengguna.
+4.  Fungsi Terbatas - Hanya untuk enkripsi, tidak untuk tanda tangan digital.
+
+Kesimpulan:
+Keduanya saling melengkapi. Asimetris (RSA/ECC) digunakan untuk membangun kepercayaan dan menukar kunci, lalu Simetris (AES) digunakan untuk mengenkripsi data utama secara cepat.
+- Pertanyaan 3: 
 )
 ---
 
@@ -116,9 +135,9 @@ Contoh:
 (Tuliskan bukti commit Git yang relevan.  
 Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit 1b624583f5d2a20d841095ceb4c844fe9b9aa2c0 (HEAD -> main, origin/main, origin/HEAD)
+Author: Nanda0218 <nandaerdipratama29@gmail.com>
+Date:   Thu Oct 16 11:51:57 2025 +0700
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
