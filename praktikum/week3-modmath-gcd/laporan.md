@@ -74,7 +74,18 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan percobaan dan analisis, dapat disimpulkan bahwa aritmetika modular merupakan fondasi matematis yang essential bagi kriptografi klasik maupun modern. Konsep GCD dan bilangan prima membentuk dasar keamanan sistem asimetris, sementara masalah logaritma diskrit yang sulit dipecahkan menjadi kunci pertahanan algoritma pertukaran kunci. Pemanfaatan sifat-sifat matematika ini memungkinkan pembangunan sistem kriptografi yang secara komputasi aman untuk aplikasi praktis.
+
+Aritmetika Modular - Dasar cipher klasik (Caesar) dan modern
+GCD & Bilangan Prima - Fondasi sistem asimetris seperti RSA
+Logaritma Diskrit - Keamanan Diffie-Hellman dan DSA
+Integrasi Simetris-Asimetris - Solusi optimal untuk keamanan & kinerja
+Masalah Distribusi Kunci - Kelemahan utama simetris yang diatasi oleh asimetris
+
+ Contoh 
+Caesar Cipher: C ≡ (P + k) mod 26
+Pertukaran Kunci: Diffie-Hellman menggunakan logaritma diskrit
+RSA: Menggunakan faktorisasi bilangan prima yang sulit
 
 ---
 
