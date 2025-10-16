@@ -17,11 +17,50 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 ---
 
 ## 2. Dasar Teori
-Teori Dasar Kriptografi Klasik dan Modular Aritmetika
+CRYPTOSYSTEM
 
-Kriptografi klasik didominasi oleh cipher substitusi dan cipher transposisi. Cipher substitusi mengganti setiap karakter plaintext dengan karakter ciphertext lainnya, seperti Caesar cipher yang menggeser huruf sejauh 3 posisi (A→D, B→E, dst). Cipher transposisi mengatur ulang pos karakter plaintext tanpa mengubah karakternya sendiri, seperti columnar transposition yang menulis plaintext dalam kolom lalu membacanya menurut pola tertentu. Kekuatan cipher-cipher ini bergantung pada kerahasiaan algoritmanya, bukan kunci—pendekatan yang kini dianggap tidak aman (security through obscurity). Konsep matematika yang mendasari banyak cipher klasik dan modern adalah modular aritmetika (atau aritmetika jam). Operasi modular bekerja dalam sistem bilangan melingkar dengan batas tertentu disebut modulus. Misalnya, dalam modulus 26 (untuk 26 huruf alfabet), operasi 25 + 3 = 28 ≡ 2 mod 26 (karena 28 ÷ 26 = 1 sisa 2). Caesar cipher secara matematis dapat dinyatakan sebagai C ≡ (P + k) mod 26, dimana P adalah plaintext, k adalah kunci geser, dan C adalah ciphertext. Dekripsinya adalah P ≡ (C - k) mod 26.
+I. KOMPONEN UTAMA
+1. Plaintext - Data asli yang dapat dibaca
+2. Ciphertext - Data terenkripsi yang tidak dapat dibaca
+3. Kunci - Data rahasia untuk proses enkripsi/dekripsi
+4. Algoritma - Metode matematika untuk transformasi data
 
-Perkembangan kriptografi modern memperkenalkan Prinsip Kerja Shannon yang menyatakan bahwa keamanan sistem harus bergantung pada kerahasiaan kunci, bukan kerahasiaan algoritma. Ini mengarah pada sistem kunci simetris** dimana kunci yang sama digunakan untuk enkripsi dan dekripsi, dengan keamanan berdasarkan konfusi (membuat hubungan antara kunci-ciphertext kompleks) dan difusi (menyebarkan pengaruh satu karakter plaintext ke banyak karakter ciphertext).
+II. PROSES DASAR
+- Enkripsi: Plaintext + Kunci → Ciphertext
+- Dekripsi: Ciphertext + Kunci → Plaintext
+
+III. JENIS SISTEM KUNCI
+
+A. KRIPTOGRAFI SIMETRIS
+- Ciri: Satu kunci rahasia yang sama untuk enkripsi & dekripsi
+- Contoh Algoritma: AES, DES, ChaCha20
+- Kelebihan:
+  - Sangat cepat dan efisien
+  - Kebutuhan sumber daya rendah
+  - Kekuatan enkripsi tinggi
+- Kelemahan:
+  - Masalah distribusi kunci
+  - Tidak ada non-repudiation
+  - Manajemen kunci rumit untuk banyak pengguna
+
+B. KRIPTOGRAFI ASIMETRIS
+- Ciri: Sepasang kunci - publik (enkripsi) dan privat (dekripsi)
+- Contoh Algoritma: RSA, ECC, ElGamal
+- Kelebihan:
+  - Solusi masalah distribusi kunci
+  - Mendukung tanda tangan digital
+  - Non-repudiation
+  - Manajemen kunci lebih mudah
+- Kelemahan:
+  - Lambat dan membutuhkan sumber daya tinggi
+  - Kunci lebih panjang untuk keamanan setara
+
+IV. IMPLEMENTASI PRAKTIS**
+Dalam sistem modern (seperti SSL/TLS):
+1. Tahap Handshake: Asimetris untuk autentikasi & negosiasi kunci sesi
+2. Tahap Komunikasi: Simetris untuk enkripsi data dengan kunci sesi
+
+Kedua sistem saling melengkapi untuk mengoptimalkan keamanan dan kinerja.
 
 ---
 
