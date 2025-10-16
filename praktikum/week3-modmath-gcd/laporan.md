@@ -67,7 +67,7 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: 
+- Pertanyaan 1: Fondasi Keamanan: Membentuk masalah matematika sulit (faktorisasi bilangan prima & logaritma diskrit) yang melindungi RSA, Diffie-Hellman, dan ECC. Efisiensi Komputasi: Membatasi hasil operasi dalam rentang tertentu, cocok untuk implementasi komputer yang cepat dan hemat memori. Fungsi Satu-Arah: Memudahkan enkripsi
 - Pertanyaan 2: 
 - Pertanyaan 3: 
 )
