@@ -156,12 +156,17 @@ Kelemahan Kriptografi Simetris (vs Asimetris):
 
 Kesimpulan:
 Keduanya saling melengkapi. Asimetris (RSA/ECC) digunakan untuk membangun kepercayaan dan menukar kunci, lalu Simetris (AES) digunakan untuk mengenkripsi data utama secara cepat.
-- Pertanyaan 3: 
+- Pertanyaan 3: Distribusi kunci adalah masalah utama dalam kriptografi simetris karena:
+1. Risiko Penyadapan - Kunci rahasia harus dikirim ke penerima, tapi proses pengiriman itu sendiri rentan disadap.
+2. Skalabilitas Buruk - Untuk `n` pengguna, dibutuhkan `n(n-1)/2` kunci unik. Contoh: 100 user → 4,950 kunci berbeda.
+3. Paradoks Keamanan - Butuh saluran aman untuk mengirim kunci, padahal tujuan kunci adalah untuk membuat saluran aman.
+4. Tidak Ada Mekanisme Bawaan - Sistem simetris murni tidak menyediakan cara aman untuk pertukaran kunci pertama.
+
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kriptosystem modern menggabungkan kelebihan sistem simetris dan asimetris secara sinergis. Sistem asimetris (seperti RSA) digunakan untuk autentikasi dan distribusi kunci yang aman, sementara sistem simetris (seperti AES) digunakan untuk enkripsi data massal karena kecepatan dan efisiensinya. Integrasi kedua pendekatan ini mengatasi kelemahan distribusi kunci simetris sekaligus mempertahankan kinerja optimal dalam komunikasi yang aman.
 
 ---
 
