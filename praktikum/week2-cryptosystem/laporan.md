@@ -17,8 +17,11 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Teori Dasar Kriptografi Klasik dan Modular Aritmetika
+
+Kriptografi klasik didominasi oleh cipher substitusi dan cipher transposisi. Cipher substitusi mengganti setiap karakter plaintext dengan karakter ciphertext lainnya, seperti Caesar cipher yang menggeser huruf sejauh 3 posisi (A→D, B→E, dst). Cipher transposisi mengatur ulang pos karakter plaintext tanpa mengubah karakternya sendiri, seperti columnar transposition yang menulis plaintext dalam kolom lalu membacanya menurut pola tertentu. Kekuatan cipher-cipher ini bergantung pada kerahasiaan algoritmanya, bukan kunci—pendekatan yang kini dianggap tidak aman (security through obscurity). Konsep matematika yang mendasari banyak cipher klasik dan modern adalah modular aritmetika (atau aritmetika jam). Operasi modular bekerja dalam sistem bilangan melingkar dengan batas tertentu disebut modulus. Misalnya, dalam modulus 26 (untuk 26 huruf alfabet), operasi 25 + 3 = 28 ≡ 2 mod 26 (karena 28 ÷ 26 = 1 sisa 2). Caesar cipher secara matematis dapat dinyatakan sebagai C ≡ (P + k) mod 26, dimana P adalah plaintext, k adalah kunci geser, dan C adalah ciphertext. Dekripsinya adalah P ≡ (C - k) mod 26.
+
+Perkembangan kriptografi modern memperkenalkan Prinsip Kerja Shannon yang menyatakan bahwa keamanan sistem harus bergantung pada kerahasiaan kunci, bukan kerahasiaan algoritma. Ini mengarah pada sistem kunci simetris** dimana kunci yang sama digunakan untuk enkripsi dan dekripsi, dengan keamanan berdasarkan konfusi (membuat hubungan antara kunci-ciphertext kompleks) dan difusi (menyebarkan pengaruh satu karakter plaintext ke banyak karakter ciphertext).
 
 ---
 
