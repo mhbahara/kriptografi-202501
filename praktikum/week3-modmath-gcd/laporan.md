@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 3
-Topik: [judul praktikum]  
+Topik: [Modular Math (Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit)]
 Nama: [Nanda Erdi Pratama]  
 NIM: [230202770]  
 Kelas: [5IKRB]  
@@ -8,13 +8,15 @@ Kelas: [5IKRB]
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:  
+1. Menyelesaikan operasi aritmetika modular.  
+2. Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).  
+3. Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.  
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Aritmetika modular adalah sistem bilangan sirkular yang bekerja dengan modulus tertentu, seperti operasi pada jam. Dalam kriptografi, konsep ini menjadi fondasi cipher klasik seperti Caesar cipher, dimana enkripsi dinyatakan sebagai C ≡ (P + k) mod 26 dan dekripsi sebagai P ≡ (C - k) mod 26. Operasi modular memastikan bahwa hasil perhitungan selalu berada dalam rentang terbatas, sehingga cocok untuk merepresentasikan huruf alfabet atau bit data. Konsep matematika lain yang vital dalam kriptografi modern meliputi GCD (Greatest Common Divisor) untuk menentukan kunci relatif prima, bilangan prima sebagai fondasi sistem asimetris seperti RSA, dan logaritma diskrit yang menjadi basis keamanan protokol pertukaran kunci Diffie-Hellman. Sifat-sifat matematis ini dimanfaatkan untuk membangun fungsi satu-arah (one-way function) yang mudah dihitung tetapi sangat sulit dibalikkan tanpa informasi rahasia tertentu, sehingga menjamin keamanan sistem kriptografi terhadap serangan.
 
 ---
 
@@ -87,9 +89,9 @@ Contoh:
 (Tuliskan bukti commit Git yang relevan.  
 Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit 3f3984e2f78fd6f769c809fa774ed3ddc8c16606 (HEAD -> main, origin/main, origin/HEAD)
+Author: Nanda0218 <nandaerdipratama29@gmail.com>
+Date:   Thu Oct 16 12:18:29 2025 +0700
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
