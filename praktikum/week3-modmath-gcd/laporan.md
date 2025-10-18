@@ -68,7 +68,26 @@ Hasil eksekusi program Caesar Cipher:
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
 - Pertanyaan 1: Fondasi Keamanan: Membentuk masalah matematika sulit (faktorisasi bilangan prima & logaritma diskrit) yang melindungi RSA, Diffie-Hellman, dan ECC. Efisiensi Komputasi: Membatasi hasil operasi dalam rentang tertentu, cocok untuk implementasi komputer yang cepat dan hemat memori. Fungsi Satu-Arah: Memudahkan enkripsi.
-- Pertanyaan 2: 
+- Pertanyaan 2: Pentingnya Invers Modular dalam Kriptografi Kunci Publik (RSA):
+1. Fungsi Dasar:
+- Invers modular memungkinkan dekripsi dengan "membalikkan" proses enkripsi
+- Tanpanya, pesan terenkripsi tidak bisa dikembalikan ke bentuk asli
+
+2. Dalam Pembuatan Kunci RSA:
+- Kunci privat `d` adalah invers modular dari kunci publik `e` modulo `φ(n)`
+- `d ≡ e⁻¹ (mod φ(n))` atau `e × d ≡ 1 (mod φ(n))`
+
+3. Mekanisme Kerja:
+- Enkripsi: `C ≡ Mᵉ (mod n)`
+- Dekripsi: `M ≡ Cᵈ (mod n)`
+- Dekripsi berhasil karena `Mᵉᵈ ≡ M (mod n)` berkat sifat `e × d ≡ 1 (mod φ(n))`
+
+4. Keamanan:
+- Menciptakan "one-way trapdoor"
+- Mudah menghitung `Mᵉ mod n` tapi sulit menghitung `Cᵈ mod n` tanpa `d`
+- Untuk dapat `d` dari `e`, harus tahu `φ(n) = (p-1)(q-1)` yang setara dengan memfaktorkan `n` - masalah komputasi yang sangat sulit
+
+Invers modular adalah jantung mekanisme pembalikan yang memungkinkan kriptografi kunci publik bekerja - satu kunci untuk mengunci (enkripsi), satu kunci untuk membuka kunci (dekripsi).
 - Pertanyaan 3: 
 )
 ---
