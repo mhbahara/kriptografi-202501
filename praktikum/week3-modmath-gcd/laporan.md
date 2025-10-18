@@ -88,7 +88,25 @@ Hasil eksekusi program Caesar Cipher:
 - Untuk dapat `d` dari `e`, harus tahu `φ(n) = (p-1)(q-1)` yang setara dengan memfaktorkan `n` - masalah komputasi yang sangat sulit
 
 Invers modular adalah jantung mekanisme pembalikan yang memungkinkan kriptografi kunci publik bekerja - satu kunci untuk mengunci (enkripsi), satu kunci untuk membuka kunci (dekripsi).
-- Pertanyaan 3: 
+- Pertanyaan 3: Tantangan Utama Logaritma Diskrit untuk Modulus Besar:
+
+1. Tidak Ada Algoritma Efisien
+   - Tidak seperti perpangkatan modular yang cepat, tidak ada algoritma waktu polinomial untuk logaritma diskrit
+   - Semua algoritma yang ada bersifat eksponensial atau sub-eksponensial
+
+2. Kompleksitas Komputasi Tinggi
+   - Bruteforce: O(p) → tidak praktis untuk p besar
+   - Algoritma terbaik: O(√p) atau O(exp(c·(log p)¹/³)) → tetap tidak feasible untuk modulus >2048 bit
+
+3. Kebutuhan Sumber Daya Massive
+   - Membutuhkan waktu komputasi sangat lama
+   - Memori besar dan jaringan komputer masif
+
+4. Kesenjangan Komputasi
+   - Maju: `g^x mod p` → cepat (waktu polinomial)
+   - Mundur: cari `x` dari `g^x mod p` → sangat lambat (waktu eksponensial)
+
+Keamanan kriptografi modern bergantung pada kesenjangan ini. Jika ditemukan algoritma cepat (seperti Algoritma Shor di komputer kuantum), sistem keamanan ini akan runtuh.
 )
 ---
 
